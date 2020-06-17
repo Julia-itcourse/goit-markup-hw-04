@@ -432,12 +432,20 @@ header {
 }
 
 .button {
+  display: inline-block;
+  padding: 6px 22px;
+
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
+
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .button:hover {
   color: var(--secondary-text-color);
