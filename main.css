@@ -9,6 +9,8 @@
 }
 
 body {
+  max-width: 1600px;
+  margin: 0 auto;
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -40,6 +42,7 @@ header {
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -72,7 +75,7 @@ header {
   margin-left: 85px;
 }
 
-.auth-nav {
+.contacts {
   display: flex;
   margin-left: auto;
 }
@@ -82,7 +85,7 @@ header {
 }
 
 .site-nav .link,
-.auth-nav .link {
+.contacts .link {
   display: block;
 
   padding-top: 32px;
@@ -99,21 +102,31 @@ header {
 }
 
 .site-nav .link:hover,
-.auth-nav .link:hover,
+.contacts .link:hover,
 .portfolio .link:hover {
   color: var(--accent-color);
 }
 
 .site-nav:focus,
-.auth-nav:focus {
+.contacts:focus {
   color: var(--accent-color);
 }
 
-.auth-nav .item + .item {
+.contacts .item + .item {
   margin-left: 30px;
 }
-.auth-nav .link {
+.contacts .list {
+  display: flex;
+}
+.contacts .list .item {
+  align-content: center;
+}
+.contacts .link {
   color: var(--primary-text-color);
+}
+
+.auth-icon {
+  fill: currentColor;
 }
 
 /* Hero banner styles */
@@ -130,7 +143,7 @@ header {
     ),
     url(./images/overlay-opt.jpg);
   height: 600px;
-  /* max-width: 1600px; To check if we meed max width - looks like no*/
+  max-width: 1600px;
 
   margin-left: auto;
   margin-right: auto;
@@ -138,8 +151,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  background-color: black;
 }
 .hero-text {
   width: 696px;
@@ -311,6 +322,7 @@ header {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
+
 .team-list {
   display: flex;
 }
@@ -320,6 +332,11 @@ header {
   margin-bottom: 16px;
 
   text-align: center;
+}
+
+.link-icon {
+  width: 44px;
+  height: 44px;
 }
 .name {
   margin-top: 30px;
@@ -342,7 +359,30 @@ header {
 }
 .social-list {
   display: flex;
+
   justify-content: space-evenly; /*to adjust after module on icons*/
+}
+.social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  color: #afb1b8;
+
+  background-color: var(--primary-background-color);
+}
+.social-link:hover {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.link-icon {
+  width: 20px;
+  height: 20px;
+  margin: 12px;
+
+  text-align: center;
+  fill: currentColor;
 }
 
 /* Clients */
@@ -422,10 +462,10 @@ header {
   color: var(--primary-text-color);
 }
 
-/* .link:focus { 
+/* .link:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
-}*/
+} */
 .filter {
   margin-top: 0;
   margin-bottom: 34px;
@@ -494,6 +534,33 @@ address .physical-address {
 
   line-height: 1.2;
   text-transform: uppercase;
+}
+.footer .list {
+  display: flex;
+
+  justify-content: space-evenly; /*to adjust after module on icons*/
+}
+
+.footer .link {
+  display: block;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  color: #afb1b8;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer .link:hover {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.link-icon {
+  width: 20px;
+  height: 20px;
+  margin: 12px;
+
+  text-align: center;
+  fill: currentColor;
 }
 .container .copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
