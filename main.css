@@ -536,7 +536,7 @@ address .physical-address {
   text-transform: uppercase;
 }
 .footer .list {
-  display: flex;
+  /* display: flex; */
 
   justify-content: space-evenly; /*to adjust after module on icons*/
 }
@@ -574,4 +574,13 @@ address .physical-address {
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   letter-spacing: 0.03em;
+}
+.footer__contact-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
 }
