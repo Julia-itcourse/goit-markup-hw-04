@@ -508,7 +508,7 @@ header {
   padding-top: 45px;
   padding-bottom: 28px;
 
-  justify-content: space-evenly; /*to adjust after creating the form*/
+  justify-content: space-between;
   align-items: baseline;
 }
 .footer-content .logo {
