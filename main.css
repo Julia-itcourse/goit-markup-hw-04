@@ -39,6 +39,11 @@ img {
 header {
   border-bottom: 1px solid #ececec;
 }
+.header__element {
+  margin-left: -15px;
+  display: flex;
+  text-align: center;
+}
 .main-nav {
   display: flex;
   align-items: center;
