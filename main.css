@@ -464,22 +464,20 @@ header {
 
 }
 
-.portfolio .title:hover {
+/* .portfolio .title:hover {
   color: var(--accent-color);
-}
+} */
 
-.portfolio .link {
+.portfolio .link--no-hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 
-/* .link:focus {
-  color: var(--secondary-text-color);
-  background-color: var(--accent-color);
-} */
+
 .filter {
   margin-top: 0;
   margin-bottom: 34px;
