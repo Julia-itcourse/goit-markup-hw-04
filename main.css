@@ -42,7 +42,7 @@ header {
 .header__element {
   margin-left: -15px;
   display: flex;
-  text-align: center;
+  align-items: center;
 }
 .main-nav {
   display: flex;
