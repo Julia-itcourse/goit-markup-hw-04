@@ -31,11 +31,14 @@
             <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
-        <div class="auth-nav">
-          <ul class="auth-nav list">
+        <div class="contacts-nav">
+          <ul class="contacts list">
             <li class="item">
               <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
+                ><svg width="16px" height="12px" class="auth-icon">
+                  <use href="./images/symbol-defs.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
               >
             </li>
             <li class="item">
@@ -45,7 +48,6 @@
         </div>
       </div>
     </header>
-
     <main>
       <section class="section portfolio">
         <!-- Filtering by categories -->
@@ -234,45 +236,72 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <div>
+          <div class="footer-element">
             <a href="./index.html" class="logo"><span>Web</span> Studio</a>
             <br />
-            <address>
-              <span class="physical-address">
-                г. Киев, пр-т Леси Украинки, 26
-              </span>
-              <br />
-              info@example.com <br />
-              +38 099 111 11 11
-            </address>
+            <div>
+              <address>
+                <span class="physical-address">
+                  г. Киев, пр-т Леси Украинки, 26
+                </span>
+              </address>
+              <ul class="list">
+                <li>
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="footer__contact-link"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+380961111111" class="footer__contact-link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-          <div>
+          <div class="footer-element">
             <p class="join-us">присоединяйтесь</p>
-            <ul class="list">
+            <ul class="social-list list">
               <li>
-                <a href="" aria-label="Ссылка на Instagram" class="link"
-                  >Instagram</a
-                >
+                <a href="" aria-label="Ссылка на Instagram" class="link">
+                  <svg class="link-icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#instagram-footer"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="" aria-label="Ссылка на Twitter" class="link"
-                  >Twitter</a
-                >
+                <a href="" aria-label="Ссылка на Twitter" class="link">
+                  <svg class="link-icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#twitter-footer"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="" aria-label="Ссылка на Facebook" class="link"
-                  >Facebook</a
-                >
+                <a href="" aria-label="Ссылка на Facebook" class="link">
+                  <svg class="link-icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#facebook-footer"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="" aria-label="Ссылка на LinkedIn" class="link"
-                  >LinkedIn</a
-                >
+                <a href="" aria-label="Ссылка на LinkedIn" class="link">
+                  <svg class="link-icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#linkedin-footer"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
+          <div class="footer-element">
+            <p class="join-us">подпишитесь на рассылку</p>
+          </div>
         </div>
-        <p class="developed-by">2020 | Developed by GoIT Students</p>
+        <!-- <div class="container copyright">
+          <p class="developed-by">2020 | Developed by GoIT Students</p>
+        </div> -->
       </div>
     </footer>
   </body>
