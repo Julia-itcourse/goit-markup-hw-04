@@ -403,6 +403,23 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  width: 170px;
+  height: 90px;
+}
+.client-link:hover {
+  color: #2196f3;
+}
+
 /* Portfololio styles */
 .portfolio {
   padding-top: 94px;
