@@ -424,6 +424,10 @@ header {
 .portfolio {
   padding-top: 94px;
 }
+
+.portfolio-text {
+  padding: 0px 24px 20px;
+}
 .portfolio .list {
   margin-top: 0;
   margin-bottom: 0;
@@ -433,6 +437,10 @@ header {
   display: flex;
   justify-content: center;
 }
+.portfolio-element {
+  background-image: url(./images/portfolio-card-bg.jpg);
+}
+
 .filter-element:not(:last-child) {
   margin-right: 8px;
 }
@@ -456,9 +464,6 @@ header {
   background-repeat: no-repeat;
 }
 .portfolio .title {
-  margin-top: 0;
-  margin-bottom: 4px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
