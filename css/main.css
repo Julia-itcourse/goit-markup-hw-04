@@ -91,12 +91,12 @@ header {
 .mail-icon {
   width: 16px;
   height: 12px;
-  fill: --primary-text-color;
+  fill: var(--primary-text-color);
 }
 .phone-icon {
   width: 10px;
   height: 15px;
-  fill: --primary-text-color;
+  fill: var(--primary-text-color);
 }
 
 .site-nav .item:not(:last-child) {
