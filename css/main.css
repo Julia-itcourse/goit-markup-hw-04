@@ -340,7 +340,9 @@ button:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   background-image: url(..image/bg.svg);
+  background-color: var(--title-text-color);
 }
+/* to remove bg color */
 
 .what-we-do-list {
   display: flex;
@@ -456,10 +458,9 @@ button:focus {
 .client-link {
   display: flex;
   justify-content: center;
-  text-align: center;
 
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
+
   border-radius: 4px;
 
   width: 170px;
@@ -616,6 +617,9 @@ address {
 }
 address .physical-address {
   color: var(--secondary-text-color);
+}
+.footer__contact-link:hover {
+  color: var(--accent-color);
 }
 .join-us {
   margin: 0;
