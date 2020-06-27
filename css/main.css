@@ -6,6 +6,7 @@
   --secondary-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
   --accent-color: #2196f3;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -427,7 +428,7 @@ button:focus {
   justify-content: center;
 
   border-radius: 50%;
-  color: #afb1b8;
+  color: var(--icon-color);
 
   background-color: var(--primary-background-color);
 }
@@ -459,17 +460,24 @@ button:focus {
   display: flex;
   justify-content: center;
 
-  border: 1px solid #afb1b8;
+  align-items: center;
+
+  border: 1px solid var(--icon-color);
 
   border-radius: 4px;
 
   width: 170px;
   height: 90px;
 }
-.client-link:hover {
-  color: var(--accent-color);
+.client-icon {
+  fill: var(--icon-color);
 }
-
+.client-link:hover {
+  border: 1px solid var(--accent-color);
+}
+.client-link:hover .client-icon {
+  fill: var(--accent-color);
+}
 /* Portfololio styles */
 .portfolio {
   padding-top: 94px;
