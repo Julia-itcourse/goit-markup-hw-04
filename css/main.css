@@ -370,11 +370,11 @@ header {
   width: 44px;
   height: 44px;
 }
-.social-link {
+/* .social-link {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .social-icon {
   width: 20px;
@@ -409,6 +409,9 @@ header {
   display: flex;
   width: 44px;
   height: 44px;
+
+  align-items: center;
+  justify-content: center;
 
   border-radius: 50%;
   color: #afb1b8;
@@ -624,7 +627,10 @@ width: calc(50% - 15px);
 } */
 
 .footer .link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 44px;
   height: 44px;
 
