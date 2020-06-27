@@ -101,11 +101,13 @@ header {
   width: 16px;
   height: 12px;
   fill: var(--primary-text-color);
+  margin-right: 10px;
 }
 .phone-icon {
   width: 10px;
   height: 15px;
   fill: var(--primary-text-color);
+  margin-right: 10px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -473,7 +475,10 @@ header {
 .portfolio-element {
   background-image: url(../images/portfolio-card-bg.jpg);
 }
-
+.portfolio-element:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
 .filter-element:not(:last-child) {
   margin-right: 8px;
 }
