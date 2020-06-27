@@ -359,6 +359,17 @@ header {
   width: 44px;
   height: 44px;
 }
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
 .name {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -384,7 +395,7 @@ header {
   padding-bottom: 24px;
 }
 .social-link {
-  display: block;
+  display: flex;
   width: 44px;
   height: 44px;
 
@@ -397,6 +408,10 @@ header {
   color: #ffffff;
   background-color: var(--accent-color);
 }
+.social-link:hover .social-icon {
+  fill: var(--primary-background-color);
+}
+/* 
 .link-icon {
   width: 20px;
   height: 20px;
@@ -404,7 +419,7 @@ header {
 
   text-align: center;
   fill: currentColor;
-}
+} */
 
 /* Clients */
 
@@ -479,6 +494,9 @@ header {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 4px;
+  padding-left: 24px;
 }
 .portfolio p {
   margin-top: 0;
