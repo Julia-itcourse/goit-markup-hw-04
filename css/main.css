@@ -217,6 +217,15 @@ header {
 
   text-align: center;
 }
+.primary-button:hover {
+  color: var(--accent-color);
+  background-color: var(--secondary-text-color);
+}
+button:active,
+button:focus {
+  outline: none;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -402,8 +411,10 @@ header {
 .social-list {
   display: flex;
 
-  justify-content: space-evenly; /*to adjust after module on icons*/
-  padding-bottom: 24px;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 .social-link {
   display: flex;
