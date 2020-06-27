@@ -53,6 +53,15 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.contacts .link {
+  align-items: center;
+}
+.contacts .link:hover .mail-icon {
+  fill: var(--accent-color);
+}
+.contacts .link:hover .phone-icon {
+  fill: var(--accent-color);
+}
 
 .logo {
   color: var(--title-text-color);
@@ -105,7 +114,7 @@ header {
 
 .site-nav .link,
 .contacts .link {
-  display: block;
+  display: flex;
 
   padding-top: 32px;
   padding-bottom: 32px;
