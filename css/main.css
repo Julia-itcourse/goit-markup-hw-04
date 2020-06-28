@@ -674,10 +674,6 @@ address .physical-address {
 .social-list--dark {
   margin: 0;
 }
-/* .footer .list { */
-/* display: flex; */
-
-/* justify-content: space-evenly; /*to adjust after module on icons*/
 
 /* .footer-element{
 width: calc((50% - 45px)/2);
@@ -749,4 +745,7 @@ width: calc(50% - 15px);
 }
 .primary-button:hover .button-icon {
   fill: var(--accent-color);
+}
+.button-text {
+  margin-right: 10px;
 }
