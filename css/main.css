@@ -203,7 +203,8 @@ header {
 }
 
 .primary-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
 
   min-width: 200px;
   border: none;
@@ -739,4 +740,13 @@ width: calc(50% - 15px);
 }
 .social-icon--white {
   fill: var(--secondary-text-color);
+}
+
+.button-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--secondary-text-color);
+}
+.primary-button:hover .button-icon {
+  fill: var(--accent-color);
 }
