@@ -278,7 +278,7 @@ button:focus {
   margin-bottom: 0;
 }
 .advantages-element {
-  width: 270px;
+  width: calc((100% - 30 * 3) / 4);
 }
 .advantages-element:not(:last-child) {
   margin-right: 30px;
@@ -352,9 +352,10 @@ button:focus {
 
 .what-we-do-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .what-we-do__element {
-  width: calc((100% - 60px) / 3);
+  width: calc((100% - 30px * 2) / 3);
 }
 .what-we-do__element:not(:last-child) {
   margin-right: 30px;
@@ -460,6 +461,7 @@ button:focus {
 
 .client-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -524,6 +526,7 @@ button:focus {
 }
 .filter .list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .portfolio-element {
@@ -546,8 +549,7 @@ button:focus {
   flex-wrap: wrap;
 }
 .portfolio-element {
-  width: calc((100% - 60px) / 3);
-  /* width: 370px; */
+  width: calc((100% - 30px * 2) / 3);
 }
 .portfolio-element:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -633,6 +635,7 @@ button:focus {
 }
 .footer-content {
   display: flex;
+  flex-wrap: wrap;
 
   justify-content: space-between;
   align-items: baseline;
@@ -643,6 +646,7 @@ button:focus {
 .footer-element {
   display: flex;
   flex-direction: column;
+  width: calc((100% - 69 * 2) / 3);
 }
 .footer-content .logo {
   margin-bottom: 20px;
@@ -675,11 +679,6 @@ address .physical-address {
 .social-list--dark {
   margin: 0;
 }
-
-/* .footer-element{
-width: calc((50% - 45px)/2);
-width: calc(50% - 15px);
-} */
 
 .footer .link {
   display: flex;

@@ -244,60 +244,73 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <div class="footer-element">
+          <address class="footer-element adress">
             <a href="./index.html" class="logo"><span>Web</span> Studio</a>
-            <br />
-            <div>
-              <address>
-                <span class="physical-address">
-                  г. Киев, пр-т Леси Украинки, 26
-                </span>
-              </address>
-              <ul class="list">
-                <li>
-                  <a
-                    href="mailto:info@devstudio.com"
-                    class="footer__contact-link"
-                  >
-                    info@devstudio.com</a
-                  >
-                </li>
-                <li>
-                  <a href="tel:+380961111111" class="footer__contact-link"
-                    >+38 096 111 11 11</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
+            <span class="physical-address">
+              г. Киев, пр-т Леси Украинки, 26
+            </span>
+
+            <ul class="list">
+              <li class="footer__contact-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="footer__contact-link"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="footer__contact-item">
+                <a href="tel:+380961111111" class="footer__contact-link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+
           <div class="footer-element">
             <p class="join-us">присоединяйтесь</p>
-            <ul class="social-list list">
-              <li>
-                <a href="" aria-label="Ссылка на Instagram" class="link">
-                  <svg class="link-icon" width="20px" height="20px">
-                    <use href="./images/symbol-defs.svg#instagram-footer"></use>
+            <ul class="social-list social-list--dark list">
+              <li class="social-element">
+                <a
+                  href=""
+                  aria-label="Ссылка на Instagram"
+                  class="social-link social-link--dark"
+                >
+                  <svg class="social-icon social-icon--white">
+                    <use xlink:href="./images/sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="Ссылка на Twitter" class="link">
-                  <svg class="link-icon" width="20px" height="20px">
-                    <use href="./images/symbol-defs.svg#twitter-footer"></use>
+              <li class="social-element">
+                <a
+                  href=""
+                  aria-label="Ссылка на Twitter"
+                  class="social-link social-link--dark"
+                >
+                  <svg class="social-icon social-icon--white">
+                    <use xlink:href="./images/sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="Ссылка на Facebook" class="link">
-                  <svg class="link-icon" width="20px" height="20px">
-                    <use href="./images/symbol-defs.svg#facebook-footer"></use>
+              <li class="social-element">
+                <a
+                  href=""
+                  aria-label="Ссылка на Facebook"
+                  class="social-link social-link--dark"
+                >
+                  <svg class="social-icon social-icon--white">
+                    <use xlink:href="./images/sprite.svg#facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href="" aria-label="Ссылка на LinkedIn" class="link">
-                  <svg class="link-icon" width="20px" height="20px">
-                    <use href="./images/symbol-defs.svg#linkedin-footer"></use>
+              <li class="social-element">
+                <a
+                  href=""
+                  aria-label="Ссылка на LinkedIn"
+                  class="social-link social-link--dark"
+                >
+                  <svg class="social-icon social-icon--white">
+                    <use xlink:href="./images/sprite.svg#linkedin"></use>
                   </svg>
                 </a>
               </li>
@@ -305,6 +318,12 @@
           </div>
           <div class="footer-element">
             <p class="join-us">подпишитесь на рассылку</p>
+            <button type="button" class="primary-button">
+              <span class="button-text">Подписаться</span>
+              <svg class="button-icon">
+                <use xlink:href="./images/sprite.svg#send"></use>
+              </svg>
+            </button>
           </div>
         </div>
         <!-- <div class="container copyright">
