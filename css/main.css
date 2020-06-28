@@ -216,6 +216,9 @@ header {
   font-size: 16px;
   line-height: 1.8;
 
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
   text-align: center;
 }
 .primary-button:hover {
@@ -627,18 +630,18 @@ button:focus {
 .footer-content {
   display: flex;
 
-  padding-top: 45px;
-  padding-bottom: 28px;
-
   justify-content: space-between;
   align-items: baseline;
 
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-element {
+  display: flex;
+  flex-direction: column;
+}
 .footer-content .logo {
-  display: inline-block;
-  padding-bottom: 8px;
+  margin-bottom: 20px;
 }
 address {
   color: rgba(255, 255, 255, 0.6);
@@ -649,12 +652,14 @@ address {
 }
 address .physical-address {
   color: var(--secondary-text-color);
+  margin-bottom: 9px;
 }
+
 .footer__contact-link:hover {
   color: var(--accent-color);
 }
 .join-us {
-  margin: 0;
+  margin-bottom: 20px;
 
   color: var(--secondary-text-color);
   font-weight: 700;
@@ -718,4 +723,8 @@ width: calc(50% - 15px);
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__contact-item:not(:last-child) {
+  margin-bottom: 9px;
 }
