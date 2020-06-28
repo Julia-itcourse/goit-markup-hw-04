@@ -7,6 +7,7 @@
   --footer-background-color: #2f303a;
   --accent-color: #2196f3;
   --icon-color: #afb1b8;
+  --footer-secondary-bakground-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -416,6 +417,7 @@ button:focus {
 }
 .social-list {
   display: flex;
+  width: 206px;
 
   justify-content: space-between;
   margin-bottom: 24px;
@@ -668,11 +670,14 @@ address .physical-address {
   line-height: 1.2;
   text-transform: uppercase;
 }
-.footer .list {
-  /* display: flex; */
-
-  justify-content: space-evenly; /*to adjust after module on icons*/
+.social-list--dark {
+  margin: 0;
 }
+/* .footer .list { */
+/* display: flex; */
+
+/* justify-content: space-evenly; /*to adjust after module on icons*/
+
 /* .footer-element{
 width: calc((50% - 45px)/2);
 width: calc(50% - 15px);
@@ -727,4 +732,11 @@ width: calc(50% - 15px);
 
 .footer__contact-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.social-link--dark {
+  background-color: var(--footer-secondary-bakground-color);
+}
+.social-icon--white {
+  fill: var(--secondary-text-color);
 }
